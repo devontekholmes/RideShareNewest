@@ -1,0 +1,56 @@
+﻿<html>
+<header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="index.html">Home</a></li>
+        <li role="presentation"><a href="customer.html">Customer</a></li>
+        <li role="presentation"><a href="driver.html">Driver</a></li>
+        <li role="presentation"><a href="about.html">About RideShare </a></li>
+       
+    </ul>
+</header>
+
+<style>
+    h3 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    table, tr, td, th {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+
+<div class="jumbotron"><center> <h3>Welcome To RideShare!</h3> <center></div>
+<body data-ng-app="APIModule" ng-controller="APIController">
+    <div class="container" style="height:500px; width:300px">
+        <span class="container">
+            <img src="RRRideShare.jpg" class="img-responsive" alt="Icon" />
+            <img src="happydrive.jpg" class="img-responsive" alt="Icon" />
+        </span>
+        <h3> Catch A Ride! Login as a Member Today!</h3>
+        <form>
+        <div class="form-group">
+            <label for="InputEmail">Email address</label>
+            <input type="email" class="form-control" ng-model="Email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="InputPassword">Password</label>
+            <input type="password" class="form-control" ng-model="Pword" placeholder="Password">
+            <button class="btn btn-info" type="submit" ng-click="check(Email,Pword)">Login</button>
+        </div>
+        </form>
+
+  
+    <center><p>&copy; Copyright 2017 VonDerik</p></center>
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/APIScripts/Module.js"></script>
+    <script src="Scripts/APIScripts/Service.js"></script>
+    <script src="Scripts/APIScripts/Controller.js"></script>
+    
+</body>
+</html>

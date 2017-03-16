@@ -1,0 +1,34 @@
+﻿<html>
+<header>
+    <title>Customer Portal</title>
+	<meta charset="utf-8" />
+    <style>
+        #map {
+            height: 400px;
+            width: 50%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <ul class="nav nav-pills">
+        <li role="presentation"><a href="index.html">Home</a></li>
+        <li role="presentation" class="active"><a href="customer.html">Customer</a></li>
+        <li role="presentation"><a href="driver.html">Driver</a></li>
+        <li role="presentation"><a href="about.html">About RideShare </a></li>
+        
+    </ul>
+</header>
+<body ng-controller="customerController" data-ng-app="APIModule">
+     <center><h3>Customer: Your Location</h3></center>
+    <center><div id="map"></div></center>
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYXLoFAIUOANDCrguhEEvnIMKSImTRi-g&callback=initMap">
+    </script>
+    <script src="gmap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/APIScripts/Module.js"></script>
+    <script src="Scripts/APIScripts/Service.js"></script>
+    <script src="Scripts/APIScripts/Controller.js"></script>
+</body>
+</html>
